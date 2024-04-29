@@ -1,0 +1,27 @@
+using System;
+
+namespace WorkingWithStrings
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            string signZodiac;
+            string specialization;
+            int age;
+
+            Console.Write("Как ваше имя - ");
+            name = Console.ReadLine();
+            Console.Write("Как ваш знак зодиака - ");
+            signZodiac = Console.ReadLine();
+            Console.Write("Какая у вас специальность - ");
+            specialization = Console.ReadLine();
+            Console.Write("Сколько вам лет - ");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Ваше имя - {name}, знак зодиака - {signZodiac} " +
+                $"специальность - {specialization}, вам - {age} лет");
+        }
+    }
+}
